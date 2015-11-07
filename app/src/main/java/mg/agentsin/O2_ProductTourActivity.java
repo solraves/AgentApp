@@ -78,7 +78,7 @@ public class O2_ProductTourActivity extends AppCompatActivity {
                 radioBoard = (RadioGroup) findViewById(R.id.radioBoard);
                 //selectedId = radioGroup1.getCheckedRadioButtonId();
                 selectedId2 = radioBoard.getCheckedRadioButtonId();
-                //radioButton = (RadioButton) findViewById(selectedId);
+                ///radioButton = (RadioButton) findViewById(selectedId);
                 radioButton1 = (RadioButton) findViewById(selectedId2);
                 fname=(AutoCompleteTextView)findViewById(R.id.fname);
                 mname=(EditText)findViewById(R.id.mname);
