@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+
+    </ScrollView>
+
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="How did you come to know about IIT Academy"
+            android:id="@+id/howdoyouknow"
+            android:textSize="30dp"
+            android:layout_alignParentTop="true"/>
+
+        <RadioGroup
+            android:layout_below="@id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroup2"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="News Paper"
+            android:id="@+id/radioButton0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textSize="25dp"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="Hoarding"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton1"
+            android:layout_gravity="left"
+            android:checked="false"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seminar"
+            android:id="@+id/radioButton2"
+            android:layout_gravity="left"
+            android:checked="false"
+            android:textSize="25dp"
+             />  <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio"
+            android:id="@+id/radioButton3"
+            android:layout_gravity="left"
+            android:checked="false"
+            android:textSize="25dp"
+            />  <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:id="@+id/radioButton4"
+            android:layout_gravity="left"
+            android:checked="false"
+            android:textSize="25dp"
+             />  <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"
+            android:id="@+id/radioButton5"
+            android:layout_gravity="left"
+            android:checked="false"
+            android:textSize="25dp"
+             />  <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relatives"
+            android:id="@+id/radioButton6"
+            android:layout_gravity="left"
+            android:checked="false"
+            android:textSize="25dp"
+             />
+             />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Any other, specify"
+        android:layout_below="@id/radioGroup"
+        android:id="@+id/other_specify_tb"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="Any Other, Specify "
+            android:layout_below="@id/other_specify_tb"
+            android:id="@+id/editText" />
+
+    </LinearLayout>
+</RelativeLayout>
