@@ -27,16 +27,17 @@ import com.makemyandroidapp.googleformuploader.GoogleFormUploader;
 public class O2_ProductTourActivity extends AppCompatActivity {
     static final int data = 1;
     static final int NUM_PAGES = 4;
-    String fulldata;
     ViewPager pager;
     PagerAdapter pagerAdapter;
     LinearLayout circles;
    // Button skip;
 
-    private RadioGroup radioBoard;
-    private RadioGroup radioGroup1;
-    private RadioButton radioButton;
-    private RadioButton radioButton1;
+     RadioGroup radioBoard;
+     RadioGroup radioGroup1;
+     RadioButton radioButton;
+     RadioButton radioButton1;
+    int selectedId;
+    int selectedId2;
 
     Button done;
     ImageButton next;
@@ -73,11 +74,11 @@ public class O2_ProductTourActivity extends AppCompatActivity {
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                radioGroup1 = (RadioGroup) findViewById(R.id.radioGroup);
+                //radioGroup1 = (RadioGroup) findViewById(R.id.radioGroup);
                 radioBoard = (RadioGroup) findViewById(R.id.radioBoard);
-                int selectedId = radioGroup1.getCheckedRadioButtonId();
-                int selectedId2 = radioBoard.getCheckedRadioButtonId();
-                radioButton = (RadioButton) findViewById(selectedId);
+                //selectedId = radioGroup1.getCheckedRadioButtonId();
+                selectedId2 = radioBoard.getCheckedRadioButtonId();
+                //radioButton = (RadioButton) findViewById(selectedId);
                 radioButton1 = (RadioButton) findViewById(selectedId2);
                 fname=(AutoCompleteTextView)findViewById(R.id.fname);
                 mname=(EditText)findViewById(R.id.mname);
